@@ -3,8 +3,8 @@
 <head prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 
 <meta name="twitter:card" content="summary" />
-<meta property="og:title" content="CoraLibre Android SDK">
-<meta property="og:site_name" content="CoraLibre Android SDK">
+<meta property="og:title" content="CoraLibre">
+<meta property="og:site_name" content="CoraLibre">
 
   
   
@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="HandheldFriendly" content="true" />
 
-  <title>CoraLibre Android SDK</title>
+  <title>CoraLibre</title>
   <meta name="Robots" content="index, follow">
   
   <link rel="shortcut icon" href="favicon.png" />
@@ -135,23 +135,7 @@ footer h4 {
 
 }
 
-p.lebenslaufzeitraum {
-	margin: 0;
 
-	FONT-WEIGHT: bold;
-	text-align:center;
-}
-
-p.lebenslaufeintrag {
-	text-align:center;
-	margin-top: 0;
-	margin-bottom: 1.5em;
-	
-	-ms-hyphens: none;
-    -webkit-hyphens: none;
-    hyphens: none;
-	
-}
 
 p.postadresse {
 	text-align:center; 
@@ -223,21 +207,13 @@ li.selected {
 	margin: auto;  padding: 50px 0;
 }
 
-img.foto {
-	border:1px solid #eeeeee; 
-	background-color: #fafafa; 
-	padding:5px; 
-	margin: 0%
-	height: 246px; 
-	width: 300px;
-	float: right; 
-	margin-left: 10px;
-}
+
 
 img.logo {
-	width: 200px;
-	height: 344px;
+	width: 192px;
+	height: 192px;
 	display: block;
+		margin-top: 3em;	
 }
 
 @media (max-width:730px) {
@@ -257,10 +233,11 @@ img.logo {
 
 	img.logo {
 	    width: 150px;
-	    height: 258px;
+	    height: 150px;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+		
 	}
 		
 		
@@ -436,11 +413,16 @@ margin-top: 5em;
 </nav>
 
 <div style="margin-top: 5em;">
+<div class="logo" style ="float: left; margin-right: 50px;">
+	<img class="logo" src="./images/logo.png" style ="display: block" alt="Logo CoraLibre" />
+</div>
+
 
 <div class = "introtext"  >
-<h1 >CoraLibre Android SDK</h1>
-<h3>Eine freie Open Source Implementierung der Corona-Tracing-API von Apple / Google für Android.</h3>
-<p class="subtitel"></p>
+<h1 >CoraLibre</h1>
+<p class="subtitel">Eine freie Open Source Implementierung der Corona-Tracing-API von Apple / Google für Android.</p>
+ <p class="subtitel">Alternative zur deutschen Corona-Warn-App, die ohne Google-Play Services auskommt.</p>
+
 </div>
 </div>
 </div>
@@ -454,11 +436,14 @@ margin-top: 5em;
 
 <section id="goal"  style="margin-top: 160px;">
 	<div style="text-align:center;">
-	<h2 class="sectionheader">UNSER ZIEL</h2>
+	<h2 class="sectionheader">UNSER ZIELE</h2>
 	
 		<p >
-Unser Ziel ist es eine freie Open Source Implementierung des Privacy-Preserving Contact Tracing (PPCP) Protokolls für Android zu schaffen. PPCP wird von der Corona-Warn-App benötigt, um das Contact-Tracing durchzuführen.
+Unser erstes Ziel ist es eine freie Open Source Implementierung des Privacy-Preserving Contact Tracing Protokolls (PPCP) für Android zu schaffen. "PPCP" wird von der deutschen Corona-Warn-App benötigt, um das Contact-Tracing durchzuführen.
 		</p>
+    <p>
+      Anschließend wollen wir eine Alternative zur deutschen Corona-Warn-App entwickeln, die auf unserer freien Implementierung von "PPCP" beruht und gleichzeitig zur deutschen Corona-Warn-App kompatibel ist. Dabei wollen wir so viel Code wie möglich von der ursprünglichen App übernehmen. Unsere App soll auf F-Droid veröffentlicht werden.
+    </p>
 
 </div>
 </section>
@@ -467,7 +452,7 @@ Unser Ziel ist es eine freie Open Source Implementierung des Privacy-Preserving 
 <p>Google hat das Contact Tracing-Protokoll als Teil der Google-Play Services implementiert. D. h. es ist unter Android nur dann verfügbar, wenn die aktuelle Version der Google-Play Services vorhanden ist, was in der Regel auch einen Google-Account voraussetzt.
 	Weiterhin ist der Quellcode des Tracing-Prokolls nicht offen zugänglich. Weil nicht jede(r) NutzerIn die Play Services installiert hat, wird mit CoraLibre eine quelloffene Alternative geschaffen.
 	Beispiel für Android-Distributionen ohne Google-Play Services sind LineageOS und /e/.
-	Eine freie Implementierung erhöht die Transparenz und ermöglicht es die Verbreitung des Contact-Tracings noch weiter zu steigern.
+	Eine freie Implementierung von "PPCP" erhöht die Transparenz und ermöglicht es die Verbreitung des Contact-Tracings noch weiter zu steigern.
 	</p>
 
 </section>
@@ -499,8 +484,8 @@ Unser Ziel ist es eine freie Open Source Implementierung des Privacy-Preserving 
 <section id="datenschutz">
 <h2 class="sectionheader">DATENSCHUTZ</h2>
 <h3>1. Datenschutz auf dieser Webseite</h3>
-<p>Wir verwende auf dieser Webseite keine Cookies. Auch Zählpixel bzw. Webbugs oder JavaScripts, die zum BenutzerInnentracking dienen, werden nicht eingesetzt.</p>
-<p>Serverbetreiber der Webseite ist ein externer Dienstleister. Um die Kommunikation zwischen dem Browser des/r Aufrufenden und dieser Webseite zu ermöglichen, muss der Server des Dienstleisters insb. die IP-Adresse, mit der der/die AufruferIn auf unsere Webseite zugreift, verarbeiten. Die Protokollierung der Zugriffe auf dieser Webseite habe wir bei unserem Dienstleister deaktiviert.</p>
+<p>Wir verwenden auf dieser Webseite keine Cookies. Auch Zählpixel bzw. Webbugs oder JavaScripts, die zum BenutzerInnentracking dienen, werden nicht eingesetzt.</p>
+<p>Serverbetreiber der Webseite ist ein externer Dienstleister. Um die Kommunikation zwischen dem Browser des/r Aufrufenden und dieser Webseite zu ermöglichen, muss der Server des Dienstleisters insb. die IP-Adresse, mit der der/die AufruferIn auf unsere Webseite zugreift, verarbeiten.</p>
 <h3>2. E-Mail-Kommunikation</h3>
 <p>Auch unser E-Mail-Server wird von einem externen Dienstleister betrieben, der E-Mails für uns empfängt, vorhält und verschickt.</p>
 
