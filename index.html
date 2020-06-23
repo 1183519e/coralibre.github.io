@@ -1,497 +1,476 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
-<head prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
-
-<meta name="twitter:card" content="summary" />
-<meta property="og:title" content="CoraLibre">
-<meta property="og:site_name" content="CoraLibre">
-
-  
-  
-  
-  <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="HandheldFriendly" content="true" />
-
+<head prefix=
+"og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.7.16">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="CoraLibre">
+  <meta property="og:site_name" content="CoraLibre">
+  <meta content="text/html; charset=utf-8" http-equiv=
+  "Content-Type">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
   <title>CoraLibre</title>
   <meta name="Robots" content="index, follow">
-  
-  <link rel="shortcut icon" href="favicon.png" />
-
-<style>
-BODY {
-text-rendering: optimizeLegibility;
-	BACKGROUND: white;
-	MARGIN-LEFT: auto;
-	MARGIN-RIGHT: auto;
-	MARGIN-TOP: 2%;
-	MARGIN-BOTTOM: 2%;
-	COLOR: black;
-	max-width: 900px;
-	font-size: 12pt;
-	FONT-FAMILY: Tahoma, Arial, Liberation Sans,  Helvetica ;
-	
-	        -ms-hyphens: auto;
+  <link rel="shortcut icon" href="favicon.png">
+  <style>
+  BODY {
+        text-rendering: optimizeLegibility;
+        BACKGROUND: white;
+        MARGIN-LEFT: auto;
+        MARGIN-RIGHT: auto;
+        MARGIN-TOP: 2%;
+        MARGIN-BOTTOM: 2%;
+        COLOR: black;
+        max-width: 900px;
+        font-size: 12pt;
+        FONT-FAMILY: Tahoma, Arial, Liberation Sans,  Helvetica ;
+        -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
-}
-H1 {
-
-
-	FONT-WEIGHT: bold;
-	FONT-SIZE: 28pt;
-	MARGIN-BOTTOM: -3px;
-	
-}
-
-
-
-H2{
-	PADDING: 3px;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	margin-top: 30px;
-	text-align: center;
-}
-
-header {
-padding: 0;
-	margin-top: 2em;
-
-}
-
-header h2 {
-	margin-top: 5px;
-	border: 0px;
-	text-align: left;
-}
-
-H3 {
-
-	FONT-WEIGHT: bold;
-	font-size: 12pt;
-
-}
-
-H4 {
-
-	FONT-WEIGHT: bold;
-	font-size: 11pt;
-
-}
-
-p {
-
-	text-align: justify;
-	line-height: 1.5em;
-}
-
-a {
-	color: black;
-}
-
-a:link {text-decoration: underline;}
-a:visited {text-decoration:underline;}
-a:hover {text-decoration: underline;}
-a:active {text-decoration: underline;} 
-
-.subtitel {
-	color: #555
-}
-footer {
-	text-align: center;
-	margin-top: 30px;
-	padding-top: 10px;
-	font-size: 8pt;
-}
-
-footer p {
-	text-align: center;
-	line-height: 1;
-}
-
-footer h4 {
-	font-size: 8pt;
-
-}
-
-.nav {
-	float:left;
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	background-color: #fff;
-	padding: 0px;
-	
-	width: 100%;
-}
-
-
-.navbar-fixed {
-	max-width: 900px;
-
-	top: 0;
-	z-index: 100000;
-	position: fixed;
-
-}
-
-
-
-p.postadresse {
-	text-align:center; 
-	line-height: 1.1;
-
-}
-
-ul.menu {
-    display:table;
-    width:90%;
-    box-sizing:border-box;
-	list-style: none;
-	padding: 0px;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding: 0px;
-	
-}
-ul.menu li {
-	display:table-cell;
-
-	text-align: center;
-	
-
-
-
-	margin: 0px;
-
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-ul.menu li a {
-	display: block;
-	padding: 5px;
-	text-decoration: none;
-	font-size: 1.2em
-	
-}
-ul.menu li a:hover {
-	
-	background-color: #f0cc2d;
-}
-.menubutton {
-	display: none;
-	text-align: center;
-	padding: 10px 15px;
-	color: #000;
-	background-color: #ddd;
-	text-decoration: none;
-	float: center;
-	
-}
-li.selected {
-	font-weight: bold;
-	border: 2px solid #000;
-}
-#menunav {
-	display: none;
-}
-
-
-.introtext {
-
-	margin: auto;  padding: 50px 0;
-}
-
-
-
-img.logo {
-	width: 192px;
-	height: 192px;
-	display: block;
-		margin-top: 3em;	
-}
-
-@media (max-width:730px) {
-
-	div.foto {
-
-		width:100%;
-	}
-
-	img.foto {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		float:none;
-		align: center;
-	}
-
-	img.logo {
-	    width: 150px;
-	    height: 150px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		
-	}
-		
-		
-	div.logo {
-			width: 100%;
-
-	}
-		
-	.introtext {
-
-		text-align: center;
-	}
-	h1 {
-		FONT-SIZE: 22pt;
-	}
-
-	header h2 {
-
-		text-align: center;
-	}
-
-	.subtitel {
-		text-align: center;
-	}
-
-}
-  
-  
-.umbrechen {
-
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
-}
-  
-
-@media (max-width:900px) {
-	
-	section {
-	
-		margin: 1%;
-	
-	}
-
-	
-
-
-	
-	ul.menu {
-		display: none;
-	}
-	.menubutton, 
-	  #menunav {
-		display: block;
-	}
-	ul.offen {
-
-		display: block;
-		list-style: none ;
-		background-color: #F4F4F4;
-		box-shadow: 2px 2px 3px #444444;
-		margin: 0;
-		padding: 0;
-		position: absolute;
-	
-		width: 100%;
-		z-index: 500;
-
-	}
-	ul.offen li {
-		display: block;
-		list-style: none;
-		text-align: center;
-		border-left:1px solid #aaa;
-		
-	}
-	ul.offen li a {
-		padding: 20px 10px;
-	}
-	ul.offen li a:hover {
-		background-color: #ccc;
-		color: #fff;
-
-	} 
-	ul.offen li.selected {
-		font-weight: bold;
-		border-top: 1px solid #ccc;
-	}      
-}
-
-.sectionheader {
-
-
-margin-top: 5em;
-}
-
-@media print {
-
-  nav {
-    display: none;
+  }
+    
+  H1 {
+        FONT-WEIGHT: bold;
+        FONT-SIZE: 28pt;
+        MARGIN-BOTTOM: -3px;
   }
 
+  H2 {
+        PADDING: 3px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-top: 30px;
+        text-align: center;
+  }
+
+  header {
+        padding: 0;
+        margin-top: 2em;
+
+  }
+
+  header h2 {
+        margin-top: 5px;
+        border: 0px;
+        text-align: left;
+  }
+
+  H3 {
+        FONT-WEIGHT: bold;
+        font-size: 12pt;
+  }
+
+  H4 {
+        FONT-WEIGHT: bold;
+        font-size: 11pt;
+
+  }
+
+  p {
+        text-align: justify;
+        line-height: 1.5em;
+  }
+
+  a {
+        color: black;
+  }
+
+  a:link {text-decoration: underline;}
+  a:visited {text-decoration:underline;}
+  a:hover {text-decoration: underline;}
+  a:active {text-decoration: underline;} 
+
+  .subtitel {
+        color: #555
+  }
+  footer {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 10px;
+        font-size: 8pt;
+  }
+
+  footer p {
+        text-align: center;
+        line-height: 1;
+  }
+
+  footer h4 {
+        font-size: 8pt;
+  }
+
+  .nav {
+        float:left;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+        padding: 0px;
+        width: 100%;
+  }
+
+
+  .navbar-fixed {
+        max-width: 900px;
+        top: 0;
+        z-index: 100000;
+        position: fixed;
+  }
+    
+  p.postadresse {
+        text-align:center; 
+        line-height: 1.1;
+  }
+
+  ul.menu {
+        display:table;
+        width:90%;
+        box-sizing:border-box;
+        list-style: none;
+        padding: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 0px;
+        
+  }
+    
+  ul.menu li {
+        display:table-cell;
+        text-align: center;
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+  }
+    
+  ul.menu li a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 1.2em    
+  }
+    
+  ul.menu li a:hover { 
+         background-color: #80d47f;
+  }
+    
+  .menubutton {
+         display: none;
+         text-align: center;
+         padding: 10px 15px;
+         color: #000;
+         background-color: #ddd;
+         text-decoration: none;
+         float: center;   
+  }
+    
+  li.selected {
+         font-weight: bold;
+         border: 2px solid #000;
+  }
+    
   #menunav {
-    display: none;
+          display: none;
   }
-  
-  .menu {
-    display: none;
+
+  .introtext {
+           margin: auto;  
+            padding: 50px 0;
   }
-  
-  html {
-	 height: 100%;
+
+    img.logo {
+     width: 192px;
+     height: 192px;
+     display: block;
+     margin-top: 3em;        
   }
+
+  @media (max-width:730px) {
+        img.logo {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;    
+        }
+                
+                
+        div.logo {
+            width: 100%;
+        }
+                
+        .introtext {
+             text-align: center;
+        }
+        
+        h1 {
+             FONT-SIZE: 22pt;
+        }
+
+        header h2 {
+             text-align: center;
+        }
+
+        .subtitel {
+             text-align: center;
+        }
+
+  }
+
+
+  .umbrechen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+
+
+  @media (max-width:900px) {
+        
+        section {
+          margin: 1%;
+        }
+       
+        ul.menu {
+         display: none;
+        }
+    
+        .menubutton, 
+          #menunav {
+            display: block;
+        }
+    
+        ul.offen {
+            display: block;
+            list-style: none ;
+            background-color: #F4F4F4;
+            box-shadow: 2px 2px 3px #444444;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 500;
+
+        }
+    
+        ul.offen li {
+            display: block;
+            list-style: none;
+            text-align: center;
+            border-left:1px solid #aaa;
+                
+        }
+    
+        ul.offen li a {
+            padding: 20px 10px;
+        }
+    
+        ul.offen li a:hover {
+            background-color: #ccc;
+            color: #fff;
+
+        } 
+    
+        ul.offen li.selected {
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+        }      
+  }
+
+  .sectionheader {
+    margin-top: 5em;
+  }
+
+  @media print {
+
+    nav {
+      display: none;
+    }
+
+    #menunav {
+      display: none;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    html {
+           height: 100%;
+    }
 }
-</style>
-
-
+  </style>
   <meta name="language" content="de">
-  <script type="text/javascript">
-	function menue() {
-	
-		
-	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	
-	if (w<=900) {
-	
-		var ele = document.getElementById('menu');
-	
-		var clazz = ele.className;
-		if (clazz.indexOf(' offen')>-1) {
-			clazz = clazz.replace(' offen','');
-		} else {
-			clazz = clazz + " offen";
-		}
-		ele.className = clazz;
-		}
-	}
+  <script>
+        function menue() {
+        
+                
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        
+        if (w<=900) {
+        
+                var ele = document.getElementById('menu');
+        
+                var clazz = ele.className;
+                if (clazz.indexOf(' offen')>-1) {
+                        clazz = clazz.replace(' offen','');
+                } else {
+                        clazz = clazz + " offen";
+                }
+                ele.className = clazz;
+                }
+        }
   </script>
-    <script>
-  
-	window.onscroll = scroll;
-	
-	function scroll() {
-	
-		var doc = document.documentElement;
-		var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-		var h = document.getElementById("intro").getBoundingClientRect().top;
-		if (h<=0) {
-			document.getElementById("nav_bar").classList.add("navbar-fixed");
-		} 
-		
-		if (h>0) {
-			document.getElementById("nav_bar").classList.remove("navbar-fixed");
-		}
-	
-	}
-  
+  <script>
+
+        window.onscroll = scroll;
+        
+        function scroll() {
+        
+                var doc = document.documentElement;
+                var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+                var h = document.getElementById("intro").getBoundingClientRect().top;
+                if (h<=0) {
+                        document.getElementById("nav_bar").classList.add("navbar-fixed");
+                } 
+                
+                if (h>0) {
+                        document.getElementById("nav_bar").classList.remove("navbar-fixed");
+                }
+        
+        }
+
   </script>
-  
 </head>
-
 <body onload="init();">
-<header id="header" style="">  <div onScroll="scroll();" id = "intro" style ="overflow: hidden;">
-<nav class="nav" id = "nav_bar"> 
-<a id="menunav" class="menubutton" href="#" style='FONT-WEIGHT: bold; text-decoration: none;' onClick="menue();return false;">Men&uuml;</a>                             
-<ul class="menu" id="menu" >
-<li  ><a href='#header'  onClick="menue();return true;">Home</a></li><li  ><a href='#goal' onClick="menue();return true;">Ziel</a></li><li ><a href='#why' onClick="menue();return true;">Warum?</a><li>
-<li ><a href='#support' onClick="menue();return true;">Unterstützung</a></li >
-	<li ><a href='#contact' onClick="menue();return true;">Kontakt</a></li >
-<li ><a href='#datenschutz' onClick="menue();return true;">Datenschutz</a></li>
-</ul>
-</nav>
-
-<div style="margin-top: 5em;">
-<div class="logo" style ="float: left; margin-right: 50px;">
-	<img class="logo" src="./images/logo.png" style ="display: block" alt="Logo CoraLibre" />
-</div>
-
-
-<div class = "introtext"  >
-<h1 >CoraLibre</h1>
-<p class="subtitel">Eine freie Open Source Implementierung der Corona-Tracing-API von Apple / Google für Android.</p>
- <p class="subtitel">Alternative zur deutschen Corona-Warn-App, die ohne Google-Play Services auskommt.</p>
-
-</div>
-</div>
-</div>
-
-
-
-
-
-
-</header>
-
-<section id="goal"  style="margin-top: 160px;">
-	<div style="text-align:center;">
-	<h2 class="sectionheader">UNSERE ZIELE</h2>
-	
-		<p >
-Unser erstes Ziel ist es eine freie Open Source Implementierung des Privacy-Preserving Contact Tracing Protokolls (PPCP) für Android zu schaffen. "PPCP" wird von der deutschen Corona-Warn-App benötigt, um das Contact-Tracing durchzuführen.
-		</p>
-    <p>
-      Anschließend wollen wir eine Alternative zur deutschen Corona-Warn-App entwickeln, die auf unserer freien Implementierung von "PPCP" beruht und gleichzeitig zur deutschen Corona-Warn-App kompatibel ist. Dabei wollen wir so viel Code wie möglich von der ursprünglichen App übernehmen. Unsere App soll auf F-Droid veröffentlicht werden.
-    </p>
-
-</div>
-</section>
-<section id="why">
-<h2 class="sectionheader">WARUM?</h2>
-<p>Google hat das Contact Tracing-Protokoll als Teil der Google-Play Services implementiert. D. h. es ist unter Android nur dann verfügbar, wenn die aktuelle Version der Google-Play Services vorhanden ist, was in der Regel auch einen Google-Account voraussetzt.
-	Weiterhin ist der Quellcode des Tracing-Prokolls nicht offen zugänglich. Weil nicht jede(r) NutzerIn die Play Services installiert hat, wird mit CoraLibre eine quelloffene Alternative geschaffen.
-	Beispiel für Android-Distributionen ohne Google-Play Services sind LineageOS und /e/.
-	Eine freie Implementierung von "PPCP" erhöht die Transparenz und ermöglicht es die Verbreitung des Contact-Tracings noch weiter zu steigern.
-	</p>
-
-</section>
-<section id="why">
-<h2 class="sectionheader">QUELLCODE</h2>
-<p>Details zur Implementierung und der Quellcode finden sich auf GitHub unter <a href='https://GitHub.com/theScrabi/CoraLibre-android-sdk'>https://GitHub.com/theScrabi/CoraLibre-android-sdk</a>.</p>
-	<p>Unsere Implementierung basiert auf DP-3T und ist unter der MPL 2-Lizenz verfügbar.</p>
-	
-	
-
-</section>
-	<section id="support">
-<h2 class="sectionheader">Unterstützung</h2>
-<p>CoraLibre wird ehrenamtlich entwickelt und lebt von der Unterstützung durch Freiwillige. Wer sich einbringen möchte, wird um Kontaktaufnahme auf GitHub gebeten.</p>
-	
-	
-
-</section>
-<section id="contact"  style="margin-top: 160px;">
-	<div style="text-align:center;">
-	<h2 class="sectionheader">KONTAKT</h2>
-		
-		<p style="text-align:center;">
-			E-Mail:  <a href="mailto:info@coralibre.de">info(at)coralibre.de</a>		<br>
-		GitHub: <a href="https://GitHub.com/CoraLibre">https://GitHub.com/CoraLibre</a></p>
-
-</div>
-</section>
-<section id="datenschutz">
-<h2 class="sectionheader">DATENSCHUTZ</h2>
-<h3>1. Datenschutz auf dieser Webseite</h3>
-<p>Wir verwenden auf dieser Webseite keine Cookies. Auch Zählpixel bzw. Webbugs oder JavaScripts, die zum BenutzerInnentracking dienen, werden nicht eingesetzt.</p>
-<p>Serverbetreiber der Webseite ist ein externer Dienstleister. Um die Kommunikation zwischen dem Browser des/r Aufrufenden und dieser Webseite zu ermöglichen, muss der Server des Dienstleisters insb. die IP-Adresse, mit der der/die AufruferIn auf unsere Webseite zugreift, verarbeiten.</p>
-<h3>2. E-Mail-Kommunikation</h3>
-<p>Auch unser E-Mail-Server wird von einem externen Dienstleister betrieben, der E-Mails für uns empfängt, vorhält und verschickt.</p>
-
-
-
-</section>
-
-
+  <header id="header" style="">
+    <div onscroll="scroll();" id="intro" style="overflow: hidden;">
+      <nav class="nav" id="nav_bar">
+        <a id="menunav" class="menubutton" href="#" style=
+        'FONT-WEIGHT: bold; text-decoration: none;' onclick=
+        "menue();return false;">Menü</a>
+        <ul class="menu" id="menu">
+          <li>
+            <a href='#header' onclick=
+            "menue();return true;">Home</a>
+          </li>
+          <li>
+            <a href='#goal' onclick=
+            "menue();return true;">Ziele</a>
+          </li>
+          <li>
+            <a href='#why' onclick=
+            "menue();return true;">Warum?</a>
+          </li>
+          <li>
+            <a href='#sourcecode' onclick=
+            "menue();return true;">Code</a>
+          </li>
+          <li>
+            <a href='#support' onclick=
+            "menue();return true;">Unterstützung</a>
+          </li>
+          <li>
+            <a href='#contact' onclick=
+            "menue();return true;">Kontakt</a>
+          </li>
+          <li>
+            <a href='#datenschutz' onclick=
+            "menue();return true;">Datenschutz</a>
+          </li>
+        </ul>
+      </nav>
+      <div style="margin-top: 5em;">
+        <div class="logo" style="float: left; margin-right: 50px;">
+        <img class="logo" src="./images/logo.png" style=
+        "display: block" alt="Logo CoraLibre"></div>
+        <div class="introtext">
+          <h1>CoraLibre</h1>
+          <p class="subtitel">Eine freie Open Source
+          Implementierung der Corona-Tracing-API von Apple / Google
+          für Android.</p>
+          <p class="subtitel">Alternative zur deutschen
+          Corona-Warn-App, die ohne Google-Play Services
+          auskommt.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="goal" style="margin-top: 160px;">
+    <div style="text-align:center;">
+      <h2 class="sectionheader">UNSERE ZIELE</h2>
+      <p>Unser erstes Ziel ist es eine freie Open Source
+      Implementierung des Privacy-Preserving Contact Tracing
+      Protokolls (PPCP) für Android zu schaffen. "PPCP" wird von
+      der deutschen Corona-Warn-App benötigt, um das
+      Contact-Tracing durchzuführen.</p>
+      <p>Anschließend wollen wir eine Alternative zur deutschen
+      Corona-Warn-App entwickeln, die auf unserer freien
+      Implementierung von "PPCP" beruht und gleichzeitig zur
+      deutschen Corona-Warn-App kompatibel ist. Dabei wollen wir so
+      viel Code wie möglich von der ursprünglichen App übernehmen.
+      Unsere App soll auf F-Droid veröffentlicht werden.</p>
+    </div>
+  </section>
+  <section id="why">
+    <h2 class="sectionheader">WARUM?</h2>
+    <p>Google hat das Contact Tracing-Protokoll als Teil der
+    Google-Play Services implementiert. D. h. es ist unter Android
+    nur dann verfügbar, wenn die aktuelle Version der Google-Play
+    Services vorhanden ist. Weiterhin ist der Quellcode des
+    Tracing-Prokolls nicht offen zugänglich. Weil nicht jede(r)
+    NutzerIn die Play Services installiert hat, wird mit CoraLibre
+    eine quelloffene Alternative geschaffen. Beispiele für
+    Android-Distributionen ohne Google-Play Services sind LineageOS
+    und /e/. Eine freie Implementierung von "PPCP" erhöht die
+    Transparenz und ermöglicht es die Verbreitung des
+    Contact-Tracings noch weiter zu steigern.</p>
+  </section>
+  <section id="sourcecode">
+    <h2 class="sectionheader">QUELLCODE</h2>
+    <p>Details zur Implementierung und der Quellcode finden sich
+    auf GitHub unter <a href=
+    'https://github.com/CoraLibre/'>https://github.com/CoraLibre/</a>.</p>
+    <p>Unsere Implementierung von "PPCP" basiert auf DP-3T und ist
+    unter der MPL 2-Lizenz verfügbar.</p>
+  </section>
+  <section id="support">
+    <h2 class="sectionheader">UNTERSTÜTZUNG</h2>
+    <p>CoraLibre wird ehrenamtlich entwickelt und lebt von der
+    Unterstützung durch Freiwillige. Wer sich einbringen möchte,
+    wird um Kontaktaufnahme auf GitHub gebeten.</p>
+  </section>
+  <section id="contact" style="margin-top: 160px;">
+    <div style="text-align:center;">
+      <h2 class="sectionheader">KONTAKT</h2>
+      <p style="text-align:center;">E-Mail: <a href=
+      "mailto:info@coralibre.de">info(at)coralibre.de</a><br>
+      GitHub: <a href=
+      "https://GitHub.com/CoraLibre">https://GitHub.com/CoraLibre</a></p>
+    </div>
+  </section>
+  <section id="datenschutz">
+    <h2 class="sectionheader">DATENSCHUTZ</h2>
+    <h3>1. Datenschutz auf dieser Webseite</h3>
+    <p>Wir verwenden auf dieser Webseite keine Cookies. Auch
+    Zählpixel bzw. Webbugs oder JavaScripts, die zum
+    BenutzerInnentracking dienen, werden nicht eingesetzt.</p>
+    <p>Serverbetreiber der Webseite ist ein externer Dienstleister.
+    Um die Kommunikation zwischen dem Browser des/r Aufrufenden und
+    dieser Webseite zu ermöglichen, muss der Server des
+    Dienstleisters insb. die IP-Adresse, mit der der/die AufruferIn
+    auf unsere Webseite zugreift, verarbeiten.</p>
+    <h3>2. E-Mail-Kommunikation</h3>
+    <p>Auch unser E-Mail-Server wird von einem externen
+    Dienstleister betrieben, der E-Mails für uns empfängt, vorhält
+    und verschickt.</p>
+  </section>
 </body>
+</html>
